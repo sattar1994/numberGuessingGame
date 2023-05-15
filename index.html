@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAVASCRIPT</title>
     <link rel="stylesheet" href="./dist/style.css">
-   
 </head>
-<body class="bg-orange-600 px-6">
+<body class=" bg-orange-600 px-6">
   <div>
+    
 
     <div>
       <div class="text-center font-serif my-4 text-white text-[1.9rem] border-b-2 w-1/3 mx-auto">
@@ -19,10 +19,31 @@
       <div id="page-1" class="mx-auto w-1/3 flex flex-col justify-between bg-black rounded-md p-3 h-[40vh] text-center my-9">
         <h1 class="text-white text-[1.4rem] mb-4">یک عدد بزرگتر از 10 وارد کنید</h1>
         <input type="text" id="input-enter-number" placeholder="exampel: 50" class="pr-2">
-        <button class="bg-green-600 font-serif text-white rounded-md active:scale-50 transition-all duration-500">شروع بازی</button>
+        <button id="start-btn" class="bg-green-600 font-serif text-white rounded-md active:scale-95 transition-all duration-200">شروع بازی</button>
       </div>
+       
+      
+      <div id="page-2" class=" bg-blue-600 mx-auto w-1/3 non rounded-md p-3 my-9 ">
+        <h1 class="text-white text-[1.3rem]">تعداد فرصت های باقیمانده شما : <span id="number-rimining">0</span></h1>
+        <div  class=" my-9 flex flex-col ">
+          <label class="text-white" for="guessing-number">حدس خود را وارد کنید</label><br>
+          <input class="pr-2" type="text"  id="guessing-number-input">
+          <button  class="bg-green-600 my-4 font-serif text-white rounded-md active:scale-95 transition-all duration-200" id="guessing-btn">حدس بزن</button>
+        </div>
+        <p class="text-white">حدس های شما : <span id="guessing-number"></span></p>
+      </div>
+    
+      <div>
+        <p class="text-white text-[1.2rem]">توجه: این صفحه صرفا به صورت عمومی درباره الگوریتم های شبیه ساز تولید اعداد تصادفی یا random number generator algorithms می باشد. اگر نیاز به دانستنی های مرتبط با این موضوع در علوم کامپیوتری دارید، به این صفحه مراجعه نمایید : Pseudorandom generator .
 
-      <div id="page-2"></div>
+          یک تاس قرمز دستگاه یا تابع یا تولید کننده‌ای است که یک یا یک سری اعداد را به صورت تصادفی تولید می‌کند.
+          
+          در ساده ترین مثال ممکن، با استفاده از تاس یک عدد از بین یک تا شش انتخاب شده و یا یک عدد ده رقمی با کنار هم قرار دادن نتیجه ده پرتاب، تولید می‌شود. این یک عدد رندوم است. مثلا 2561421121.
+          
+          می توان به جای تاس از هر وسیله ای دیگری که نمایانگر نوعی عدد باشد (مانند سکه) نیز استفاده کرد.
+          
+          این روش hardware random-number generators (HRNG) نام دارد. اعداد تولید شده در این روش تصادفی هستند و به هیچ روش منطقی نمی‌ توان نتیجه را پیش بینی کرد.</p>
+      </div>
 
 
     </div>
@@ -35,5 +56,6 @@
   </div>
   
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
